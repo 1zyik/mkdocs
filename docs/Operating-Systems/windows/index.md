@@ -1,23 +1,24 @@
 ---
-title: Everything Linux
-description: A comprehensive guide to the operating system that powers the cloud, from shell scripting to kernel tuning.
+title: Everything Windows
+description: A comprehensive guide to the operating system that powers desktops and servers worldwide, from PowerShell scripting to Active Directory.
+icon: fontawesome/brands/windows
 ---
 
-# Everything Linux
+# Everything Windows
 
-Linux is the operating system of the cloud, the supercomputer, and the tinkerer. It is the bedrock upon which modern infrastructure is built.
+Windows is a dominant force in both desktop and server environments. It is the backbone of many corporate networks and the familiar interface for billions of users.
 
-In this section, I document my learnings, cheat sheets, and deep dives into the Linux ecosystem. From basic shell navigation to kernel tuning, this is where the penguin lives.
+In this section, I document my learnings, cheat sheets, and deep dives into the Windows ecosystem. From basic GUI navigation to advanced PowerShell scripting, this is where the window to computing opens.
 
 ## What to Expect
 
-*   **Command Line Mastery**: Moving beyond `ls` and `cd` into `awk`, `sed`, and bash scripting.
-*   **System Internals**: Understanding processes, memory management, and the boot process.
-*   **Networking**: `ip`, `netstat`, firewalls, and routing.
-*   **Distro Hopping**: Notes on Debian, Alpine, RHEL, and others.
+*   **PowerShell Prowess**: Moving beyond clicking through wizards into the world of `Get-Process`, `Invoke-Command`, and powerful scripting.
+*   **System Internals**: Understanding the Registry, services, the boot process, and Group Policy.
+*   **Networking**: `ipconfig`, `netsh`, Windows Firewall, and Active Directory.
+*   **Server & Desktop**: Notes on Windows Server, Windows 10/11, and the different editions.
 
 ## The Philosophy
 
-> "Everything is a file."
+> "A window for every task."
 
-Linux rewards curiosity. The more you dig, the more you understand how computers actually work. Whether you are debugging a production outage or setting up a Raspberry Pi, the skills learned here are universal.
+Windows offers a rich graphical interface paired with powerful command-line capabilities. The more you explore, the more you can automate and control. Whether you are managing a fleet of servers or customizing your own desktop, the skills learned here are invaluable.

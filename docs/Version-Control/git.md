@@ -1,13 +1,13 @@
 ---
-title: Git Tips and Tricks
+title: Git
 description: This doc page covers tips and tricks you can use with Git.
-icon: lucide/git-branch
+icon: material/git
 ---
 
 # Git Tips and Tricks
 
 ### Delete all local branches except `main/master`
-```
+``` bash
 git branch | grep -v "main" | xargs git branch -D
 ```
 
@@ -26,5 +26,5 @@ git fetch origin
 # Checkout into remote feature branch
 git checkout -b {feature-branch-name} origin/{feature-branch-name}
 ```
-??? Info
+!!! Warning
     Intended feature branch should already exist in remote

@@ -1,32 +1,34 @@
+---
+title: Powershell
+description: This doc page covers tips and tricks you can use with windows powershell.
 icon: material/powershell
+---
 
-## Get list of all installed windows server optional features
-```
+# Windows Powershell Tips and Tricks
+
+### Get list of all installed windows server optional features
+``` ps1
 Get-WindowsOptionalFeature -Online | where {$_.state -eq "Enabled"} | ft -Property featurename
 ```
-!!! tip
+???+ tip
     Since these are admin features, make sure to run this in an elevated window. <br/>
     You can also output to a file by pipeing result using below command
     ```
     | Out-File -FilePath "path\tofile.txt"
     ```
 
-## How to kill a process
-```
+### How to kill a process
+``` bash
 taskkill /f /pid <pid>
 ```
-!!! tip
+???+ tip
     Make sure to find the pid using Task Manager and replace `<pid>` with the unique value. 
 
-## Set time and date to specific time zone
-```
+### Set time and date to specific time zone
+``` ps1
 Set-TimeZone -Name "Central Standard Time"
 ```
-!!! tip
+???+ tip
     This is an admin feature, run in elevated window. <br>
     Use `Get-TimeZone` to know which one you are currently set to.<br>
     Use `Get-TimeZone -ListAvailable` to get all possible time zones you can apply. 
-
-## Unzip multiple files into a single location
-
-## Set a single service account to multiple windows services

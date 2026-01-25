@@ -1,6 +1,7 @@
 ---
 title: Everything Linux
 description: A comprehensive guide to the operating system that powers the cloud, from shell scripting to kernel tuning.
+icon: fontawesome/brands/linux
 ---
 
 # Everything Linux
