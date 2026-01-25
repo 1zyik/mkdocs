@@ -1,0 +1,30 @@
+---
+title: Git Tips and Tricks
+description: This doc page covers tips and tricks you can use with Git.
+icon: lucide/git-branch
+---
+
+# Git Tips and Tricks
+
+### Delete all local branches except `main/master`
+```
+git branch | grep -v "main" | xargs git branch -D
+```
+
+??? Tip
+    Replace main with branch of your choice <br>
+    Can be tied with a linux alias to speed up cleanup process
+
+### Clone a remote feature branch
+``` bash linenums="1"
+# Clone repo normally
+git clone https://github.com/1zyik/t1nk3r.git
+
+#Fetch latest origin updates
+git fetch origin
+
+# Checkout into remote feature branch
+git checkout -b {feature-branch-name} origin/{feature-branch-name}
+```
+??? Info
+    Intended feature branch should already exist in remote
