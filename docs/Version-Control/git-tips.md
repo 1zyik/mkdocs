@@ -1,5 +1,5 @@
 ---
-title: Git
+title: Git Tips
 description: This doc page covers tips and tricks you can use with Git.
 icon: material/git
 ---
@@ -14,6 +14,15 @@ git branch | grep -v "main" | xargs git branch -D
 ??? Tip
     Replace main with branch of your choice <br>
     Can be tied with a linux alias to speed up cleanup process
+
+### Verify an SSH key fingerprint
+``` bash
+ssh-keygen -lf /path/to/your/key.pub
+```
+
+??? Tip
+    Useful for confirming a key matches what's registered on GitHub. <br>
+    Works on both auth keys and signing keys.
 
 ### Clone a remote feature branch
 ``` bash linenums="1"
